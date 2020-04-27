@@ -12,7 +12,7 @@ const App = () => {
       <StatusBar barStyle="dark-content" />
       <SafeAreaView>
         <View>
-          <Text>Hello World!</Text>
+          <Text>Hello World!!!</Text>
         </View>
       </SafeAreaView>
     </>
