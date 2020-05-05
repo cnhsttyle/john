@@ -1,10 +1,6 @@
 import React from 'react';
-import {
-  SafeAreaView,
-  View,
-  Text,
-  StatusBar,
-} from 'react-native';
+import { SafeAreaView, View, Text, StatusBar } from 'react-native';
+import { isIphoneX } from 'utils/base';
 
 const App = () => {
   return (
@@ -12,7 +8,7 @@ const App = () => {
       <StatusBar barStyle="dark-content" />
       <SafeAreaView>
         <View>
-          <Text>Hello World!!!</Text>
+          <Text>{ `${isIphoneX()}` }</Text>
         </View>
       </SafeAreaView>
     </>
