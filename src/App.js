@@ -1,5 +1,6 @@
 import React from 'react';
 import { SafeAreaView, View, Text, StatusBar } from 'react-native';
+import { c } from 'stylesheets';
 import { isIphoneX } from 'utils/base';
 
 const App = () => {
@@ -8,7 +9,7 @@ const App = () => {
       <StatusBar barStyle="dark-content" />
       <SafeAreaView>
         <View>
-          <Text>{ `${isIphoneX()}` }</Text>
+          <Text style={c.pink}>{ `${isIphoneX()}` }</Text>
         </View>
       </SafeAreaView>
     </>
