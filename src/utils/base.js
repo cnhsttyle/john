@@ -1,4 +1,4 @@
-import { Dimensions, Platform } from 'react-native';
+import { Dimensions, Platform, Alert } from 'react-native';
 
 
 export const test = 1;
@@ -13,4 +13,13 @@ export const isIphoneX = () => {
 export const isIphone = () => {
   if (Platform.OS === 'ios') return true;
   return false;
+};
+
+export const showAlert = (title = '알림', msg) => {
+  Alert.alert(
+    title,
+    msg,
+    [{ text: '확인', onPress: () => {} }],
+    { cancelable: false },
+  );
 };
